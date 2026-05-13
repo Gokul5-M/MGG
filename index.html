@@ -16,7 +16,7 @@
 
 body{
     overflow:hidden;
-    background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb);
+    background:linear-gradient(135deg,#E6E6FA,#D8BFD8,#E0B0FF);
     color:white;
 }
 
@@ -173,45 +173,95 @@ audio{
     z-index:999;
 }
 
-/* BUTTERFLY */
+/* EMOJIS */
 
-.butterfly{
+.emoji{
     position:absolute;
-    width:70px;
-    animation:fly 14s linear infinite;
+    font-size:60px;
     z-index:-1;
 }
 
-@keyframes fly{
+/* BUTTERFLIES */
+
+.butterfly1{
+    left:5%;
+    animation:fly1 12s linear infinite;
+}
+
+.butterfly2{
+    left:45%;
+    animation:fly2 15s linear infinite;
+}
+
+.butterfly3{
+    left:80%;
+    animation:fly3 18s linear infinite;
+}
+
+/* SPIDERS */
+
+.spider1{
+    left:20%;
+    animation:swing1 10s linear infinite;
+}
+
+.spider2{
+    left:70%;
+    animation:swing2 13s linear infinite;
+}
+
+@keyframes fly1{
     0%{
-        transform:translateY(100vh) translateX(0);
+        transform:translateY(100vh);
     }
 
     100%{
-        transform:translateY(-120vh) translateX(200px);
+        transform:translateY(-120vh)
+        translateX(120px);
     }
 }
 
-/* SPIDERMAN */
-
-.spiderman{
-    position:absolute;
-    width:100px;
-    animation:swing 12s linear infinite;
-    z-index:-1;
-}
-
-@keyframes swing{
+@keyframes fly2{
     0%{
-        transform:translateY(-150px) translateX(0);
-    }
-
-    50%{
-        transform:translateY(50vh) translateX(100px);
+        transform:translateY(120vh);
     }
 
     100%{
-        transform:translateY(110vh) translateX(-100px);
+        transform:translateY(-100vh)
+        translateX(-100px);
+    }
+}
+
+@keyframes fly3{
+    0%{
+        transform:translateY(110vh);
+    }
+
+    100%{
+        transform:translateY(-130vh)
+        translateX(150px);
+    }
+}
+
+@keyframes swing1{
+    0%{
+        transform:translateY(-150px);
+    }
+
+    100%{
+        transform:translateY(110vh)
+        translateX(80px);
+    }
+}
+
+@keyframes swing2{
+    0%{
+        transform:translateY(-180px);
+    }
+
+    100%{
+        transform:translateY(120vh)
+        translateX(-80px);
     }
 }
 
@@ -228,29 +278,14 @@ audio{
 
 </audio>
 
-<!-- BUTTERFLIES -->
+<!-- EMOJIS -->
 
-<img class="butterfly"
-src="https://cdn-icons-png.flaticon.com/512/616/616490.png"
-style="left:5%; animation-delay:0s;">
+<div class="emoji butterfly1">🦋</div>
+<div class="emoji butterfly2">🦋</div>
+<div class="emoji butterfly3">🦋</div>
 
-<img class="butterfly"
-src="https://cdn-icons-png.flaticon.com/512/616/616490.png"
-style="left:50%; animation-delay:4s;">
-
-<img class="butterfly"
-src="https://cdn-icons-png.flaticon.com/512/616/616490.png"
-style="left:80%; animation-delay:8s;">
-
-<!-- SPIDERMAN -->
-
-<img class="spiderman"
-src="https://cdn-icons-png.flaticon.com/512/2909/2909762.png"
-style="left:20%; animation-delay:1s;">
-
-<img class="spiderman"
-src="https://cdn-icons-png.flaticon.com/512/2909/2909762.png"
-style="left:70%; animation-delay:6s;">
+<div class="emoji spider1">🕷️</div>
+<div class="emoji spider2">🕷️</div>
 
 <!-- PAGE 1 -->
 
